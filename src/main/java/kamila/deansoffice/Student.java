@@ -7,7 +7,6 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
-import java.time.ZonedDateTime;
 import java.util.List;
 
 @Data
@@ -21,7 +20,7 @@ public class Student {
     private String email;
     private Gender gender;
     private Address address;
-    private List<String> favouriteSubjects;
+    private List<String> passedCourses;
     private BigDecimal totalSpentInBooks;
     private LocalDateTime created;
 
@@ -31,7 +30,7 @@ public class Student {
         this.email = email;
         this.gender = gender;
         this.address = address;
-        this.favouriteSubjects = favouriteSubjects;
+        this.passedCourses = favouriteSubjects;
         this.totalSpentInBooks = totalSpentInBooks;
         this.created = created;
     }
